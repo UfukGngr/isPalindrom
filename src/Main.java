@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
     static boolean isPalindrom(int number){
@@ -17,7 +19,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrom(4224));
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Please enter a number: ");
+        int number = input.nextInt();
+        System.out.println(isPalindrom(number));
 
 
 
